@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary: #2E7D32;
+    --primary-light: #E8F5E9;
+    --primary-dark: #1B5E20;
+    --text-dark: #1F2937;
+    --text-light: #6B7280;
+}
+
+.arabic {
+    font-family: 'Amiri', serif;
+    direction: rtl;
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arabic Classes - Understanding Quran</title>
+    
+    <!-- Using Tailwind for consistent styling across the site -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Loading Inter for English text and Noto Nastaliq Urdu for Urdu text -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind configuration with our custom theme -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'grass': '#2E7D32',
+                        'grass-light': '#E8F5E9',
+                        'grass-dark': '#1B5E20',
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                        nastaliq: ['Noto Nastaliq Urdu', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-inter antialiased bg-white">
+    <!-- Top announcement banner for immediate attention -->
+    <div class="bg-grass text-white text-center py-2 text-sm">
+        <p>Next batch starting Monday - Limited seats available!</p>
+    </div>
+
+    <!-- Navigation for easy section access -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-16 items-center">
+                <span class="text-grass font-bold text-xl">Arabic Classes</span>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#why-learn" class="text-gray-600 hover:text-grass">Why Learn?</a>
+                    <a href="#schedule" class="text-gray-600 hover:text-grass">Schedule</a>
+                    <a href="#register" class="bg-grass text-white px-6 py-2 rounded-lg hover:bg-grass-dark transition-colors">
+                        Register Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with three-tier heading strategy -->
+    <section class="bg-grass min-h-[80vh] flex items-center justify-center">
+        <div class="max-w-7xl mx-auto px-4 py-24 text-center">
+            <h1 class="text-6xl md:text-8xl font-bold text-white mb-12">
+                Arabic Classes
+            </h1>
+            <div class="font-nastaliq text-4xl md:text-6xl text-white mb-8">
+                قرآنی عربی کی تعلیم
+            </div>
+            <p class="text-2xl md:text-3xl text-white mb-16">
+                Meant to open up access to the Quran
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4 md:gap-6">
+                <a href="#register" class="inline-block bg-white text-grass font-semibold px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors">
+                    Register Now
+                </a>
+                <a href="#schedule" class="inline-block bg-transparent border-2 border-white text-white font-semibold px-8 py-4 rounded-lg hover:bg-white hover:text-grass transition-colors">
+                    View Schedule
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Learn Section explaining the benefits -->
+    <section id="why-learn" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Why Learn Arabic?</h2>
+            <div class="grid md:grid-col-1 text-center gap-8">
+                <div class="bg-grass-light p-8 rounded-xl shadow-lg">
+                    <div class="w-16 h-16 bg-grass-light rounded-full flex items-center justify-center mb-6">
+                        <span class="text-2xl">📋</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Let Quran reach you the way it was revealed</h3>
+                    <p class="text-gray-600">Translation is a viel. Allah's narration has an effect that no translation can have. Quranic words are the words chosen by Allah and what is more beatuiful than listening to these words as they were narrated.</p>
+                </div> 
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <div class="w-16 h-16 bg-grass-light rounded-full flex items-center justify-center mb-6">
+                        <span class="text-2xl">🎯</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Needs Consistence</h3>
+                    <p class="text-gray-600">Upto 30 minutes daily. Discipline is important.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <div class="w-16 h-16 bg-grass-light rounded-full flex items-center justify-center mb-6">
+                        <span class="text-2xl">📈</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Small Steps are enough</h3>
+                    <p class="text-gray-600">If you learn one sentence per day; in a year you will know 365. If you don't do anything, you will be the same in 10 years as well. </p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <div class="w-16 h-16 bg-grass-light rounded-full flex items-center justify-center mb-6">
+                        <span class="text-2xl">🌟</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Results will come (In Sha Allah)</h3>
+                    <p class="text-gray-600">In a year, bi-izni-Allah, people see results. You will as well in sha Allah.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section with important information -->
+    <section id="schedule" class="py-20 bg-gray-50">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Class Schedule</h2>
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-6">Time & Days</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-center">
+                                <span class="text-2xl mr-3">🕒</span>
+                                <span>7:30 PM - 8:00 PM</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-2xl mr-3">📅</span>
+                                <span>Monday, Tuesday, Wednesday, Friday</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-2xl mr-3">💻</span>
+                                <span>Live Classes via Zoom</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-6">Important Notes</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-center">
+                                <span class="text-2xl mr-3">❓</span>
+                                <span>Join if you really want this.</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-2xl mr-3">📢</span>
+                                <span>Join only to seek the pleasure of Allah.</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-2xl mr-3">💬</span>
+                                <span>You'll join a WhatsApp group after registration</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-2xl mr-3">🎓</span>
+                                <span>Next batch starts Monday</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form with GitHub Forms integration -->
+    <section id="register" class="py-20">
+        <div class="max-w-xl mx-auto px-4">
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold text-center mb-8">Register Now</h2>
+                <div class="mb-8 p-4 bg-grass-light rounded-lg">
+                    <p class="font-medium">Important Notes:</p>
+                    <ul class="list-disc list-inside mt-2 space-y-2 text-gray-600">
+                        <li>Registration is free but seats are limited</li>
+                        <li>No mid-term entries allowed</li>
+                        <li>Next batch might start next year</li>
+                    </ul>
+                </div>
+                <!-- Form using thehoneybug Formspree integration -->
+                <form action="https://formspree.io/f/xbjnkbql" method="POST" class="space-y-6">
+                    <!-- Redirect to the thanks page on successful submission -->
+                    <input type="hidden" name="_next" value="https://thehoneybug.github.io/arabic-classes/thanks.html">
+                    
+                    <!-- Anti-spam measures -->
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+                        <input type="text" id="name" name="name" required
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-grass focus:border-grass">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                        <input type="email" id="email" name="email" required
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-grass focus:border-grass">
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">WhatsApp Number</label>
+                        <input type="tel" id="phone" name="phone" required
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-grass focus:border-grass">
+                    </div>
+                    <button type="submit"
+                        class="w-full bg-grass text-white font-semibold px-6 py-4 rounded-lg hover:bg-grass-dark transition-colors">
+                        Register for Free Course
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-gray-400">Seeking only the pleasure of Allah ﷻ</p>
+        </div>
+    </footer>
+</body>
+</html>
